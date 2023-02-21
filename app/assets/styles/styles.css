@@ -2,6 +2,7 @@
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global';
+@import 'base/_typography';
 @import 'modules/_btn.css';
 @import 'modules/_headline.css';
 @import 'modules/_modal.css';
