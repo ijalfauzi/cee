@@ -2,23 +2,24 @@
     position: relative;
     background-image: url('https://ijalfauzi.github.io/cee/assets/images/large_hero.webp');
     background-size: cover;
-    background-position: 53% 20%;
     background-attachment: scroll;
     background-repeat: no-repeat;
+    min-height: 42.313rem;
+    margin-top: -5.9rem;
 
-    @mixin atSmall {
-    padding: 6.5rem 0;
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,.25);
+        z-index: 1;
     }
 
-    &__image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        visibility: hidden;
-
-        @mixin atLarge {
-        visibility: visible;
-        }
+    @mixin atSmall {
+    padding: 15rem 0;
     }
 
     &__text-content {
@@ -32,17 +33,17 @@
     }
 
     &__title {
-        font-weight: 400;
-        text-transform: uppercase;
+        font-weight: 600;
         margin: 0;
         font-size: 1.25rem;
         text-align: center;
-        font-weight: bold;
         margin-top: 2.5rem;
         color: $white;
+        position: absolute;
+        z-index: 2;
 
         @mixin atSmall {
-            font-size: 3.438rem;
+            font-size: 2.5rem;
             text-align: inherit;
             margin-top: 2rem;
         }
