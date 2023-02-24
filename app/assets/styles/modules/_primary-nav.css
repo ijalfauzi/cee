@@ -34,7 +34,7 @@ nav {
   }
   .item {
     @mixin atSmall {
-      padding: 1.25rem 1rem;
+      padding: 1.25rem .75rem;
     }
   }
   .item.button {

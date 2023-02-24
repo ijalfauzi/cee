@@ -19,7 +19,7 @@
     }
 
     @mixin atSmall {
-    padding: 15rem 0;
+        padding: 12rem 0 6.5rem 0;
     }
 
     &__text-content {
@@ -45,7 +45,7 @@
         @mixin atSmall {
             font-size: 2.5rem;
             text-align: inherit;
-            margin-top: 2rem;
+            margin-top: 8rem;
         }
     }
 
@@ -81,11 +81,9 @@
     .large-hero {
         padding: 4.5rem 0;
     }
-    
-    /* Reduce large hero background on medium screen */
-    .large-hero::before {
-        top: -80px;
-        left: -40px;
+
+    .large-hero__title {
+        margin-top: 12rem;
     }
 }
 
