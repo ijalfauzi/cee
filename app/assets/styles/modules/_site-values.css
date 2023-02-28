@@ -1,0 +1,22 @@
+.site-values {
+
+}
+
+.value {
+    background-color: $grey;
+    margin: 0 0 2rem;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    font-size: .85rem;
+    transition: .25s all;
+    border-bottom: 2px solid $grey;
+
+    &:hover {
+        background-color: #eeeeee;
+        border-bottom-color: #ddd;
+    }
+
+    img {
+        max-width: 50%;
+    }
+}
