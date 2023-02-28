@@ -1,0 +1,10 @@
+.site-features {
+    background-color: $grey;
+
+    fieldset {
+        margin: 0 0 2rem;
+    }
+    legend {
+        padding: 0 1rem;
+    }
+}
