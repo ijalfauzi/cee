@@ -3,6 +3,7 @@
 
     fieldset {
         margin: 0 0 2rem;
+        border-radius: 6px;
     }
     legend {
         padding: 0 1rem;
