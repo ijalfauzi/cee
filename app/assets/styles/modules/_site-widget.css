@@ -1,0 +1,39 @@
+.site-widget {
+    background-color: #242d2d;
+    color: $white;
+
+    &__socials {
+        font-size: 1.5rem;
+
+        a {
+            display: inline-block;
+            margin: 0 .25em;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: .5rem;
+    }
+}
+
+.widget-content {
+    margin-bottom: 50px;
+
+    &--last-widget {
+        margin-bottom: 0;
+    }
+
+    @mixin atMedium {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
