@@ -37,3 +37,10 @@
         margin: 0;
     }
 }
+
+.widget-2,
+.widget-3 {
+    a:hover {
+        text-decoration:underline;
+    }
+}
