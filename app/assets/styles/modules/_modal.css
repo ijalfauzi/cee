@@ -24,10 +24,6 @@
         font-size: 1rem;
         font-weight: 300;
         color: $white;
-
-        @mixin atSmall {
-            font-size: 1.125rem;
-        }
     }
 
     &__close {
