@@ -65,6 +65,7 @@ nav {
     font-weight: 500;
     padding: .9375rem 0;
     text-transform: capitalize;
+    
   }
   .menu li.subitem a {
     padding: 1rem 1.25rem;

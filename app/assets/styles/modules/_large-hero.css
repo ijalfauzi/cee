@@ -4,11 +4,18 @@
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    margin-top: -5.875rem;
+    margin-top: -5.1rem;
+    padding: 21.6rem 0 16.5rem;
+
+    @mixin atSmall {
+        padding: 6.5rem 0;
+    }
 
     @mixin atLarge {
         padding: 20.875rem 0 15rem;
+        margin-top: -5.875rem;
     }
+
 
 
 
@@ -36,31 +43,6 @@
             font-size: 2.5rem;
             text-align: inherit;
             margin-top: 0;
-        }
-    }
-
-    &__description {
-        text-align: center;
-        font-weight: 300;
-        font-size: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1.25rem;
-        color: $grey;
-
-        @mixin atSmall {
-            font-size: 1.25rem;
-            text-align: inherit;
-        }
-    }
-
-    &__cta {
-        text-align: center;
-        margin-bottom: 1.25rem;
-
-        @mixin atSmall {
-            text-align: inherit;
-            margin-bottom: 0;
         }
     }
 }
