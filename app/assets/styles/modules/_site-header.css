@@ -2,4 +2,8 @@
     background: transparent;
     position: relative;
     z-index: 5;
+
+    @mixin atSmall {
+        background: transparent;
+    }
 }

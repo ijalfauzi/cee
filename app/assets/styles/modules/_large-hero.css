@@ -4,23 +4,13 @@
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    min-height: 42.313rem;
-    margin-top: -5.9rem;
+    margin-top: -5.875rem;
 
-    &::before {
-        position: absolute;
-        content: '';
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        background: rgba(0,0,0,.25);
-        z-index: 1;
+    @mixin atLarge {
+        padding: 20.875rem 0 15rem;
     }
 
-    @mixin atSmall {
-        padding: 12rem 0 6.5rem 0;
-    }
+
 
     &__text-content {
         padding-top: 60px;
@@ -37,15 +27,15 @@
         margin: 0;
         font-size: 1.25rem;
         text-align: center;
-        margin-top: 2.5rem;
+        margin-top: 0;
         color: $white;
-        position: absolute;
+
         z-index: 2;
 
         @mixin atSmall {
             font-size: 2.5rem;
             text-align: inherit;
-            margin-top: 8rem;
+            margin-top: 0;
         }
     }
 
@@ -79,17 +69,13 @@
 @media screen and (min-width: 768px) and (max-width: 1280px) {
     /* Top and bottom padding for large hero on medium screen */
     .large-hero {
-        padding: 4.5rem 0;
-    }
-
-    .large-hero__title {
-        margin-top: 12rem;
+        padding: 15.875rem 0 10rem;
     }
 }
 
 @media screen and (max-width: 1024px) {
     /* Remove top left background on 1024px screen */
-    .large-hero::before, .site-blog::before, .site-content::before {
+    .site-blog::before, .site-content::before {
         display: none;
     }
 }
