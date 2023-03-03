@@ -1,6 +1,11 @@
 .site-widget {
     background-color: #242d2d;
     color: $white;
+    text-align: center;
+
+    @mixin atMedium {
+        text-align: inherit;
+    }
 
     &__socials {
         font-size: 1.5rem;
