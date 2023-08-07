@@ -40,7 +40,7 @@
         z-index: 2;
 
         @mixin atSmall {
-            font-size: 2.5rem;
+            font-size: 5rem;
             text-align: inherit;
             margin-top: 0;
         }
