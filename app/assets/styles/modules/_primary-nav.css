@@ -211,6 +211,10 @@ nav {
   color: $darkYellow;
 }
 
+li.toggle a {
+  font-size:2rem;
+}
+
 .has-submenu a:focus {
   color: $darkYellow!important;
 }
