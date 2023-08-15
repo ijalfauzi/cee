@@ -1,10 +1,5 @@
 .site-header {
-    background: transparent;
     position: relative;
     z-index: 5;
-    background-color: rgba(51, 51, 51, .5);
-
-    @mixin atSmall {
-        background: transparent;
-    }
+    background-color: #00205b;
 }

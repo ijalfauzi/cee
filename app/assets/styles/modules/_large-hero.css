@@ -1,6 +1,6 @@
 .large-hero {
     position: relative;
-    background-image: url('https://ijalfauzi.github.io/cee/assets/images/large_hero_new.webp');
+    background-image: url('https://ijalfauzi.github.io/cee/assets/images/large_hero.webp');
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -35,11 +35,12 @@
         font-style: italic;
         font-weight: 300;
         margin: 0;
-        font-size: 1.25rem;
+        font-size: 2.5rem;
         text-align: center;
         margin-top: 0;
         color: $white;
         line-height: 1;
+        transition: .25s all ease-out;
 
         z-index: 2;
 
@@ -68,9 +69,9 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
-    /* Remove top left background on 1024px screen */
-    .site-blog::before, .site-content::before {
-        display: none;
+@media screen and (min-width: 1023px) and (max-width: 1280px) {
+    .large-hero__title {
+        font-size: 5rem;
+        margin-left: 7rem;
     }
 }
