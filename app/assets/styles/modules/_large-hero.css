@@ -1,9 +1,10 @@
 .large-hero {
     position: relative;
     background-image: url('https://ijalfauzi.github.io/cee/assets/images/large_hero_new.webp');
-    background-size: cover;
-    background-attachment: scroll;
+    background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     margin-top: -5.1rem;
     padding: 21.6rem 0 16.5rem;
 
@@ -30,19 +31,31 @@
     }
 
     &__title {
-        font-weight: 600;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 300;
         margin: 0;
         font-size: 1.25rem;
         text-align: center;
         margin-top: 0;
         color: $white;
+        line-height: 1;
 
         z-index: 2;
+
+        strong {
+            color: #f4c400;
+            font-weight: 700;
+        }
+
+        span {
+            font-weight: 700;
+        }
 
         @mixin atSmall {
             font-size: 5rem;
             text-align: inherit;
-            margin-top: 0;
+            margin-top: 6rem;
         }
     }
 }
