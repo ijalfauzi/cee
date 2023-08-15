@@ -88,6 +88,13 @@
     }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .large-hero__title {
+        font-size: 5rem;
+        margin-left: 4rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .large-hero {
         background-image: url('https://ijalfauzi.github.io/cee/assets/images/large_hero_mobile.webp');
